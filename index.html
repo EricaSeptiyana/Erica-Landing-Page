@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Akhir CSS -->
+
+    <title>My Portofolio | Erica Septiyana</title>
+    <script src="node_modules/three/build/three.js"></script>
+    <!-- <script src="/node_modules/three/examples/js/controls/OrbitControls.js"></script> -->
+
+    <!-- <style>
+        canvas {
+          border: 10px solid rgb(236, 124, 221);
+          margin: 10px;
+          padding: 10px;
+          /* background-color: rgb(163, 228, 228); */
+          /* background-color: rgb(247, 214, 30); */
+        }
+    </style> -->
+</head>
+
+<body>
+    <!-- <section>
+        <div class="3js" id="3js">
+            <script src="kerangkabanyak.js"></script>
+        </div>
+    </section> -->
+    <!-- Navbar -->
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white-300 shadow-sm">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+            <div class="container">
+                <a class="navbar-brand" href="#">Erica Septiyana</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#navbar">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tjs">Three JS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#project">My Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Akhir Navbar -->
+
+    <!-- Jumbotron -->
+    <section id ="jumbotron" class="jumbotron text-center">
+        <div class="text-container">
+            <p>Hello,</p>
+            <p>Saya Erica Septiyana</p>
+            <p>Mahasiswa Politeknik Negeri Banyuwangi<br>D-III Teknik Informatika</p>
+            <button class="hire-btn" href="#myCanvas">Active 2D</button>
+            <script>
+                var nama = prompt("Masukkan nama kamu", " ");
+                var absen = prompt("Masukkan absen", " ");
+                var a = 3;
+                var b = 2;
+                document.write("<h4> Selamat Datang " + nama + " " + "Kamu Adalah Pengunjung ke- " + (absen * 3 + 2) + "</h4>");
+            </script>
+        </div>
+        <img alt="picture" class="picture" src="https://i.ibb.co/xswq8dH/erica.jpg">  
+        
+        <div class="about-container" id="about" data-bs-toggle="modal">
+            <!--picture-->
+                <img src="https://i.ibb.co/gTqz4Lx/erica3.jpg"/>
+            <!--about me text-->
+                <div class="about-text">
+                <p>About Me</p>
+                    <p>...........................................</p>
+                    <p>Hai, nama saya Erica Septiyana. saya adalah mahasiswa aktif Politeknik Negeri Banyuwangi. Saya mengambil jurusan Teknik Informatika</p>
+                    <p>Saya merupakan anak ke 3 dari 3 bersaudara yang semuanya perempuan. Selain itu saya juga memiliki hobi Travelling. </p>
+                </div>    
+        </div>
+        <!-- <script>
+            var nama = prompt("Masukkan nama kamu", " ");
+            var absen = prompt("Masukkan absen", " ");
+            var a = 3;
+            var b = 2;
+            document.write("<h4> Selamat Datang " + nama + " " + "Kamu Adalah Pengunjung ke- " + (absen * 3 + 2) + "</h4>");
+        </script> -->
+        <!-- <img src="https://i.ibb.co/YXbj1J1/1.jpg" alt="Erica Septiyana" width="130" class="img-thumbnail" />
+        <h1 ondblclick="alert('Hallo Guys Kembali lagi di Web erica')" class="display-4" id="Ericasept">Erica Septiyana</h1>
+        <p class="lead">Mahasiswa di Politeknik Negeri Banyuwangi</p> -->
+    </section>
+
+    <!-- Akhir Jumbotron -->
+  
+  <!-- Canvas -->
+          <!-- <canvas id="myCanvas">
+            <div width="100" height="50">
+                <script src="codepen/kerangkabanyak.js"></script>
+            </div>
+          </canvas> -->
+            
+    <!-- Akhir Canvas -->
+
+    <!-- About Me -->
+
+    <section class="row" id="row">
+        <div class="container">
+            <div class="row1">
+                <div class="row text-center">
+                    <div class="row-text1 col-6">
+                        <p>Skill</p>
+	                    <p> Mampu mengoperasikan microsoft office 
+                        <br> Mampu mengoperasikan Photoshop 
+                        <br> Mampu mengoperasikan CorellDraw
+                    </p>
+                    </div>
+                    <div class="row-text2 col-6">
+                        <p>Organisasi</p>
+	                    <p> Pernah Menjadi Anggota OSIS
+                            <br> Pernah Menjadi Anggota Pramuka
+                            <br> Pernah Menjadi Anggota PMR
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row1">
+                <div class="row text-center">
+                    <div class="row-text3">
+                        <p>Three JS</p>
+	                    <p> Klik "Refresh" untuk mendapatkan tampilan "Three JS" yang berbeda dari sebelumnya
+                    </p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <!-- <canvas id="myCanvas"></canvas> -->
+    <!-- <script src="kerangkabanyak.js"></script> -->
+    </section>
+    <!-- Akhir About -->
+
+    <!-- JS -->
+    <section>
+        <div class="tjs" id="tjs">
+            <div class="row1">
+                <div class="row text-center">
+                    <div class="row-text3">
+                        <p>Three JS</p>
+	                    <p> Klik "Refresh" untuk mendapatkan tampilan "Three JS" yang berbeda dari sebelumnya.
+                            <br> dan jika kita mengklik dengan mouse maka kotak maron akan bergerak.
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <!-- THREEJS -->
+            <script src="kerangkabanyak.js"></script>
+        </div>
+    </section>
+    <!-- AKHIR JS -->
+
+    <!-- CANVAS -->
+    <!-- <canvas id="myCanvas" style="border: 10px solid rgb(230, 152, 219)" ;></canvas> -->
+    <canvas id="myCanvas" style="border: 0px solid " ;>
+        <script>
+            //TUGAS OBJEK 2 DIMENSI
+            let canvasKita = document.getElementById("myCanvas");
+            canvasKita.width = 1350;
+            canvasKita.height = 420;
+// canvasKita.height = 690;
+            let ctx = canvasKita.getContext("2d");
+            let imageData = ctx.getImageData(0, 0, canvasKita.width, canvasKita.height);
+
+
+            var imageObj = new Image();
+            imageObj.onload = function(){
+            var pattern = ctx.createPattern(imageObj, 'repeat');
+//BENTUK LINGKARAN HANYA PINGGIR2 SAJA YANG BERWARNA
+            let x = 0, y = 0, r = 50;
+            let keatas = false, kebawah = true;
+            let kekanan = true, kekiri = false;
+
+            function animasi(){
+                ctx.save();
+                ctx.clearRect(0,0,canvasKita.width, canvasKita.height);
+
+    // var imageObj = new Image();
+    // imageObj.onload = function(){
+    //     var pattern = ctx.createPattern(imageObj, 'repeat');
+
+                //langit
+                // gradient
+                // ctx.beginPath();
+                    let lGradd = ctx.createRadialGradient(110,10,100,10,140,400);
+                    lGradd.addColorStop(0, '#71d2ff');
+                    lGradd.addColorStop(1, '#cd83ed');
+                    ctx.fillStyle = lGradd;
+                    ctx.fillRect(0,0,1400,300);
+                    ctx.closePath();
+                 //akhir
+
+                //matahari
+                    ctx.beginPath();
+                    let lGraad = ctx.createRadialGradient(10,10,20,10,140,400);
+                    lGraad.addColorStop(0, '	#FF4500');
+                    lGraad.addColorStop(1, '	#708090');
+                    ctx.fillStyle = lGraad;
+                    ctx.arc(x+100,y+20,30,0,Math.PI*2);
+                    ctx.fill();
+                //terbenam
+
+                //awan
+                    //1
+                    ctx.beginPath();
+                    ctx.fillStyle = "white";
+                    ctx.arc(100, 50+r, 25, 0,Math.PI * 2, false);
+                    ctx.fill();
+
+                    //2
+                    ctx.beginPath();
+                    ctx.fillStyle = "white";
+                    ctx.arc(125, 60+r, 20, 0,Math.PI * 2, false);
+                    ctx.fill();
+
+                    //3
+                    ctx.beginPath();
+                    ctx.fillStyle = "white";
+                    ctx.arc(150, 53+r, 22, 0,Math.PI * 2, false);
+                    ctx.fill();
+
+                    //4
+                    ctx.beginPath();
+                    ctx.fillStyle = "white";
+                    ctx.arc(170, 50+r, 20, 0,Math.PI * 2, false);
+                    ctx.fill();
+
+                    //4
+                    ctx.beginPath();
+                    ctx.fillStyle = "white";
+                    ctx.arc(125, 40+r, 25, 0,Math.PI * 2, false);
+                    ctx.fill();
+                    
+                //akhir awan
+
+                //gunung
+                    //1
+                    ctx.beginPath();
+                    ctx.fillStyle = '#045203';
+                    ctx.arc(70,300, 100,0,Math.PI,true);
+                    ctx.fill();
+
+                    //2
+                    ctx.beginPath();
+                    ctx.fillStyle = '#045203';
+                    ctx.arc(200,325, 100,0,Math.PI,true);
+                    ctx.fill();
+            
+                    //3
+                    ctx.beginPath();
+                    // ctx.fillStyle = '#045203';
+                    ctx.arc(350,295, 120,0,Math.PI,true);
+                    ctx.closePath();
+                    ctx.fillStyle = pattern;
+                    // ctx.strokeStyle = '#045203';
+                    // ctx.lineWidth=5;
+                    ctx.fill();
+                    // ctx.stroke();
+
+                    //4
+                    ctx.beginPath();
+                    // ctx.fillStyle = '#045203';
+                    ctx.arc(500,295, 150,0,Math.PI,true);
+                    ctx.closePath();
+                    ctx.fillStyle = pattern;
+                    // ctx.strokeStyle = '#045203';
+                    // ctx.lineWidth=5;
+                    ctx.fill();
+                    // ctx.stroke();
+
+                    //5
+                    ctx.beginPath();
+                    ctx.fillStyle = '#045203';
+                    ctx.arc(950,295, 120,0,Math.PI,true);
+                    ctx.closePath();
+                    // ctx.fillStyle = pattern;
+                    ctx.fill();
+
+                    //6
+                    ctx.beginPath();
+                    ctx.fillStyle = '#045203';
+                    ctx.arc(1250,295, 300,0,Math.PI,true);
+                    ctx.closePath();
+                    // ctx.fillStyle = pattern;
+                    ctx.fill();
+                //akhir gunung
+
+                //MEMBUAT POHON
+                    //tanah hijau
+                    ctx.beginPath();
+                    ctx.fillStyle = '#02b71e';
+                    ctx.fillRect(0, 275, 1500, 55);
+
+                    //1
+                    //batang pohon 1
+                    ctx.beginPath();
+                    ctx.fillStyle='#5f3603';
+                    ctx.fillRect(25, 205, 10, 80);
+
+                    //pohon 1
+                    ctx.beginPath();
+                    ctx.moveTo(30, 180);
+                    ctx.lineTo(10, 250);
+                    ctx.lineTo(50, 250);
+                    ctx.closePath();
+                    ctx.fillStyle = 'green';
+                    ctx.fill();
+
+                    //pohon 1
+                    ctx.beginPath();
+                    ctx.moveTo(30, 200);
+                    ctx.lineTo(5, 270);
+                    ctx.lineTo(55, 270);
+                    ctx.closePath();
+                    ctx.fillStyle = 'green';
+                    ctx.fill();
+                    
+                    //batang pohon 2
+                    ctx.beginPath();
+                    ctx.fillStyle='#5f3603';
+                    ctx.fillRect(350, 205, 10, 80);
+
+                    //pohon 2
+                    ctx.beginPath();
+                    ctx.moveTo(355, 180);
+                    ctx.lineTo(335, 250);
+                    ctx.lineTo(375, 250);
+                    ctx.closePath();
+                    ctx.fillStyle = 'green';
+                    ctx.fill();
+
+                    //pohon 2
+                    ctx.beginPath();
+                    ctx.moveTo(355, 200);
+                    ctx.lineTo(330, 270);
+                    ctx.lineTo(380, 270);
+                    ctx.closePath();
+                    ctx.fillStyle = 'green';
+                    ctx.fill();
+
+                    //3
+                    //batang pohon 3
+                    ctx.beginPath();
+                    ctx.fillStyle='#5f3603';
+                    ctx.fillRect(730, 205, 10, 80);
+
+                    //pohon 3
+                    ctx.beginPath();
+                    ctx.moveTo(735, 180);
+                    ctx.lineTo(700, 250);
+                    ctx.lineTo(775, 250);
+                    ctx.closePath();
+                    ctx.fillStyle = 'green';
+                    ctx.fill();
+
+                    //pohon 3
+                    ctx.beginPath();
+                    ctx.moveTo(735, 200);
+                    ctx.lineTo(695, 270);
+                    ctx.lineTo(780, 270);
+                    ctx.closePath();
+                    ctx.fillStyle = 'green';
+                    ctx.fill();
+
+                //AKHIR POHON
+
+                //dilarang parkir
+
+                    //cagak
+                    //tiang
+                    ctx.beginPath();
+                    ctx.fillStyle='silver';
+                    ctx.fillRect(1145, 208, 8, 80);
+
+                    //lingkar1
+                    ctx.beginPath();
+                    ctx.fillStyle = 'red';
+                    ctx.arc(1150,225, 30,0,Math.PI*2);
+                    ctx.closePath();
+                    // ctx.fillStyle = pattern;
+                    ctx.fill();
+
+                    //lingkar2
+                    ctx.beginPath();
+                    ctx.fillStyle = 'white';
+                    ctx.arc(1150,225, 25,0,Math.PI*2);
+                    ctx.closePath();
+                    // ctx.fillStyle = pattern;
+                    ctx.fill();
+
+                    //huruf P
+                    ctx.beginPath();
+                    ctx.font = "bold 40pt calibri";
+                    ctx.fillStyle = 'black';
+                    // ctx.arc(1150,205, 25,0,Math.PI*2);
+                    ctx.fillText("P", 1138, 242, 100, 100);
+                    ctx.closePath();
+                    // ctx.fillStyle = pattern;
+                    ctx.fill();
+
+                    //huruf slash /
+                    ctx.beginPath();
+                    ctx.font = "bold 45pt calibri";
+                    ctx.fillStyle = 'red';
+                    // ctx.arc(1150,205, 25,0,Math.PI*2);
+                    ctx.fillText("/", 1135, 240, 100, 100);
+                    ctx.closePath();
+                    // ctx.fillStyle = pattern;
+                    ctx.fill();
+
+
+                // //bilboard
+                //     //tiang
+                //     ctx.beginPath();
+                //     ctx.fillStyle='silver';
+                //     ctx.fillRect(940, 208, 10, 80);
+
+                //     //membuat papan
+                //     ctx.beginPath();
+                //     ctx.fillStyle = pattern;
+                //     // ctx.fillStyle = "#40e0d0";
+                //     // ctx.fillStyle="rgba(0, 150, 255, 0.5)";
+                //     ctx.fillRect(880, 170, 130, 80);
+                //     ctx.closePath();
+                //     // ctx.fillStyle = pattern;
+                //     ctx.fill();
+
+                //     ctx.beginPath();
+                //     ctx.fillStyle = "WHITE";
+                //     // ctx.fillStyle="rgba(0, 150, 255, 0.5)";
+                //     ctx.fillRect(880, 230, 130, 20);
+
+                //     //kata bilboar
+                //     ctx.beginPath();
+                //     ctx.font = "bold 10pt Times";
+                //     ctx.fillStyle = 'black';
+                //     // ctx.arc(1150,205, 25,0,Math.PI*2);
+                //     ctx.fillText("BILBOARD", 910, 244, 100, 100);
+                //     ctx.closePath();
+                //     // ctx.fillStyle = pattern;
+                //     ctx.fill();
+
+                //     //1
+                //     ctx.beginPath();
+                //     ctx.fillStyle = "grey";
+                //     // ctx.fillStyle="rgba(0, 150, 255, 0.5)";
+                //     ctx.fillRect(935, 277, 20, 10);
+                //     ctx.fillRect(933, 285, 25, 5);
+
+            //RUMAH
+
+                    //bangunan
+                    ctx.beginPath();
+                    ctx.fillStyle = "orange";
+                    ctx.fillRect(165,220,80,60);
+                    
+                    //atap
+                    ctx.beginPath();
+                    ctx.moveTo(205, 175);
+                    ctx.lineTo(160, 225);
+                    ctx.lineTo(250, 225);
+                    ctx.closePath();
+                    ctx.fillStyle = 'red';
+                    ctx.fill();
+
+                    //membuat pintu persegi panjang
+                    ctx.fillStyle = "blue";
+                    ctx.lineWidth = 1;
+                    ctx.fillRect(180, 240, 20, 40);
+
+                    //membuat jendela
+                    ctx.fillStyle = '#09F';
+                    ctx.lineWidth = 1;
+                    ctx.fillRect(210, 230, 30, 25);
+                
+
+            //AKHIR RUMAH
+
+            //JALAN RAYA
+                    //badan jalan
+                    ctx.beginPath();
+                    ctx.fillStyle = "grey";
+                    ctx.fillRect(0, 295, 1750, 1750);
+                    ctx.closePath();
+
+                    //strip putih
+                    ctx.beginPath();
+                    ctx.fillStyle = "white";
+                    ctx.fillRect(0, 340, 70, 10);
+
+                    //strip putih
+                    ctx.beginPath();
+                    ctx.fillStyle = "white";
+                    ctx.fillRect(150, 340, 70, 10);
+
+                    //strip putih
+                    ctx.beginPath();
+                    ctx.fillStyle = "white";
+                    ctx.fillRect(300, 340, 70, 10);
+
+                    //strip putih
+                    ctx.beginPath();
+                    ctx.fillStyle = "white";
+                    ctx.fillRect(450, 340, 70, 10);
+
+                    //strip putih
+                    ctx.beginPath();
+                    ctx.fillStyle = "white";
+                    ctx.fillRect(600, 340, 70, 10);
+
+                    //strip putih
+                    ctx.beginPath();
+                    ctx.fillStyle = "white";
+                    ctx.fillRect(750, 340, 70, 10);
+
+                    //strip putih
+                    ctx.beginPath();
+                    ctx.fillStyle = "white";
+                    ctx.fillRect(900, 340, 70, 10);
+
+                    //strip putih
+                    ctx.beginPath();
+                    ctx.fillStyle = "white";
+                    ctx.fillRect(1050, 340, 70, 10);
+
+                    //strip putih
+                    ctx.beginPath();
+                    ctx.fillStyle = "white";
+                    ctx.fillRect(1200, 340, 70, 10);
+
+                    //strip putih
+                    ctx.beginPath();
+                    ctx.fillStyle = "white";
+                    ctx.fillRect(1330, 340, 70, 10);
+            //AKHIR JALAN RAYA
+
+            //MOBIL
+                    //membuat atap mobil
+                    ctx.beginPath();
+                    // ctx.fillStyle = "#40e0d0";
+                    ctx.fillStyle="rgba(0, 150, 255, 0.5)";
+                    ctx.fillRect(x+1, 220, 130, 40);
+                
+                //badan mobil GRADIENT
+                    ctx.beginPath();
+                    let lGrad = ctx.createRadialGradient(10,10,20,10,140,400);
+                    lGrad.addColorStop(0, '#ff0000');
+                    lGrad.addColorStop(1, '	#483D8B');
+                    ctx.fillStyle = lGrad;
+                    ctx.fillRect(x, 255, 130, 45);
+                
+                //badan mobil 2
+                    ctx.beginPath();
+                    ctx.fillStyle = "gold";
+                    ctx.fillRect(x+130, 250, 50, 50);
+
+                //badan mobil 3
+                    ctx.beginPath();
+                    ctx.fillStyle = "gold";
+                    ctx.fillRect(x+130, 225, 32, 32);
+                
+                //tempat sopir
+                    ctx.beginPath();
+                    ctx.fillStyle = "white";
+                    ctx.fillRect(x+135, 230, 20, 20);
+                
+                //membuat ban mobil DEPAN
+                    ctx.beginPath();
+                    ctx.fillStyle = "black";
+                    ctx.arc(x+130, 250+r, 20, 0,Math.PI * 2, false);
+                    ctx.fill();
+
+                //membuat ban mobil
+                    ctx.beginPath();
+                    ctx.fillStyle = "white";
+                    ctx.arc(x+130, 250+r, 10, 0,Math.PI * 2, false);
+                    ctx.fill();
+                
+                //membuat ban mobil BELAKANG
+                    ctx.beginPath();
+                    ctx.fillStyle = "black";
+                    ctx.arc(x+30, 250+r, 20, 0, Math.PI * 2, false);
+                    ctx.fill();
+
+                //membuat ban mobil depan
+                    ctx.beginPath();
+                    ctx.fillStyle = "white";
+                    ctx.arc(x+30, 250+r, 10, 0, Math.PI * 2, false);
+                    ctx.fill();
+                
+            //AKKHIR MOBIL
+            //BATAS RUMPUT BAWAH
+            //batas jalan
+                    ctx.beginPath();
+                    ctx.fillStyle = "#02b71e";
+                    ctx.fillRect(0, 395, 1750, 40);
+                    ctx.closePath();
+
+                    cekPosisi();
+                    if(keatas){
+                        y--;
+                    }
+                    if(kebawah){
+                        y++;
+                    }
+                    if(kekanan){
+                        x++;
+                    }
+                    if(kekiri){
+                        x--;
+                    } 
+                    ctx.restore();
+                }
+                setInterval(animasi, 3);
+
+                function cekPosisi(){
+                    if(y+r == canvasKita.height-r){
+                        keatas = true;
+                        kebawah = false;
+                    } else if(y==0){
+                        keatas = false;
+                        kebawah = true;
+                    }
+
+                    if (x+r == canvasKita.width-r){
+                        kekanan = false;
+                        kekiri = true;
+                    } else if(x==0){
+                        kekanan = true;
+                        kekiri = false;
+                    }
+                }
+                
+                }
+                imageObj.src = "img/erica5.jpg";
+        </script>
+    </canvas>
+    <!-- <script src="pemandangan2.js"></script> -->
+
+
+    <!-- My Project -->
+
+    <section id="project">
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col mt-3">
+                    <h2>My Projects</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="https://i.ibb.co/7SdYPLW/imk.jpg" class="card-img-top" alt="project">
+                        <!-- <img src="img/imk.jpg" class="card-img-top" alt="project"> -->
+                        <div class="card-body">
+                            <p class="card-text">
+                                <p>Web Healthydoc</p>
+                                <a href="# ">
+                                    <h6> Proyek Web ini merupakan salah satu tugas dari mata kuliah "Interaksi Mansuia Komputer". Dalam proyek ini saya membuat tampilan web sederhana yaitu web yang bertema kesehatan</h6>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="https://i.ibb.co/7pLbf9W/fluttix2.jpg" class="card-img-top" alt="project2">
+                        <!-- <img src="img/fluttix2.jpg" class="card-img-top" alt="project2"> -->
+                        <div class="card-body">
+                            <p class="card-text">
+                                <p>Flutter</p>
+                                <a href="# ">
+                                    <h6> Proyek Flutter ini merupakan salah satu tugas dari mata kuliah "Pengembangan Aplikasi Mobile". Aplikasi yang dibuat yaitu aplikasi untuk membooking ticket bioskop </h6>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="https://i.ibb.co/yWmCCHy/laravell.jpg" class="card-img-top" alt="project3">
+                        <!-- <img src="img/laravell.jpg" class="card-img-top" alt="project3"> -->
+                        <div class="card-body">
+                            <p class="card-text">
+                                <p>Laravell</p>
+                                <a href="# ">
+                                    <h6> Proyek laravell ini merupakan salah satu tugas dari mata kuliah "Pemrograman Web". Dimana kita diharuskan  menduplikasi dari web yang sudah ada yaitu Tech New </h6>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Akhir Project -->
+
+    <!-- Contact Me -->
+
+    <section id="contact">
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col mt-3 text-decoration-underline">
+                    <h2>Contact Me</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <h5>Location</h5>
+                    <p>Jl.Raya Jember-Banyuwangi | Desa Lemahbang Dewo | Kecamatan Rogojampi | Kabupaten Banyuwangi | KodePos: 68462</p>
+                </div>
+                <div class="col">
+                    <h5>Social Media</h5>
+                    <div class="social ">
+                        <ul>
+                            <li><a href="https://www.facebook.com/erica.acire.756/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/bacotsapanih?s=08"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/ericasept28/"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Akhir Contact Me -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+
+</html>
