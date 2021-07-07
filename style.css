@@ -1,0 +1,294 @@
+body {
+    min-height: 200px;
+    background-color: #e2dfdf;
+}
+
+/*canvas*/
+/* #myCanvas{
+	background-color: #7643c8;
+	color: #ee6da9;
+} */
+
+.navbar {
+    background-color: 	rgb(229, 165, 235);
+
+}
+
+.active{
+	color:#2d2a2a;
+	font-weight:bold;
+}
+
+.jumbotron {
+    padding: 20rem 10rem;
+	background-color: #cb88f8; 
+	/* d361ad */
+/*     background-image: url("https://buat.web.id/wp-content/uploads/2020/08/bubble-animated-background.svg"); */
+  /* background-image: url("https://flevix.com/wp-content/uploads/2019/12/Motion-Background.svg"); */
+    /* color: #ffffff; */
+	/* background-image: url("kerangkabanyak.js"); */
+    margin-bottom: 0px;
+	height: 800px;
+	width: 100%;
+}
+
+/*jumbotron*/
+.picture{
+	height:400px;
+	position:absolute;
+	top: 150px;
+	bottom:10px;
+	left: 60%;
+	/* transform: translateX(-75%); */
+    border-radius:100px;
+	border: 9px solid #e7bfeb;
+}
+
+/*teks hallo erica*/
+.text-container p:nth-child(1){
+	font-family: calibri;
+	font-weight:bold;
+	color:#fbf8fa;
+	font-size:22px;
+    text-align: left;
+}
+.text-container p:nth-child(2){
+	font-family:calibri;
+	font-weight:bold;
+	letter-spacing:1px;
+	color:#360234;
+	font-size:60px;	
+    text-align: left;
+}
+.text-container p:nth-child(3){
+	font-family: myriad pro regular;
+	color: #eed8f1;
+	font-size:30px;
+	line-height:30px;
+    text-align: left;
+}
+/*untuk jarak tulisan hallo erica*/ 
+.text-container p{
+	margin:45px 90px 25px;
+	line-height:0px;
+}
+.text-container{
+	position: absolute;
+	left:13%;
+	top:42%;
+	transform:translate(-13%,-42%);
+}
+
+.text-container button{
+	width:130px;
+	height:42px;
+	border-radius:10px;
+	font-family:calibri;
+	font-weight:bold;
+	font-size: 14px;
+	outline:none;
+	/* margin:0px 10px; */
+	margin-right: 400px;
+	margin-bottom: 30px;
+}
+.hire-btn{
+	border:2px solid #f8cee9;
+	color:#4b113a;
+	background-color:transparent;
+	display:initial;
+	
+}
+button:active{
+	transform:scale(1.1);
+}
+
+/*about me yg ada foto*/
+/*about me*/
+.about-container{
+	width:100%; /*lebar kotak*/
+	height:370px; /*tinggi kotak*/
+	background:#ebc0c0;
+	border-radius:20px; /*lengkung kotak*/
+	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+	display: flex;
+	position: relative;
+	justify-content:space-evenly;
+	align-items: center;
+    margin-top: 300px;
+}
+.about-container img{
+	height:250px; 
+	/*tinggi/besar kecilnya foto*/
+	border-radius:10px;
+}
+.about-text{
+	width:500px;
+} 
+.about-text p:nth-child(1){
+	color:#621858;
+	font-family: myriad pro;
+	font-weight:bold;
+	font-size:33px;
+	line-height:0px;
+    text-align: left;
+}
+.about-text p:nth-child(2){
+	color:#880777;
+	font-size:13px;
+	font-family: myriad pro;
+	font-weight:bold;
+	line-height:5px;
+    text-align: left;
+}
+.about-text p:nth-child(3),.about-text p:nth-child(4){
+	color:#4b0238;
+	font-family:myriad proi;
+	font-size:18px;
+    text-align: justify;
+}
+
+/*akhir about me yg ada foto*/
+/*TULISAN ABOUT ME2*/
+.row1{
+	height:300px;
+	/* background-image: url(kerangkabanyak.js); */
+	background-color:#e298ec;
+	/* background-color:#9f25af; */
+	/* padding: 2% 10% 0px 10%; */
+	margin-top: 0px;
+	
+}
+.row-text1 p:nth-child(1){
+	font-family:myriad proi;
+	font-weight:bold;
+	color:#621858;
+	font-size:30px;
+	line-height:50px;
+	text-decoration: underline;
+	margin-top: 230px;
+}
+.row-text1 p:nth-child(2){
+	font-family:myriad proi;
+	color:#270c20;
+	font-size: 22px;
+}
+
+.row-text2 p:nth-child(1){
+	font-family:myriad proi;
+	font-weight:bold;
+	color:#621858;
+	font-size:30px;
+	line-height:50px;
+	text-decoration: underline;
+	margin-top: 230px;
+}
+
+.row-text2 p:nth-child(2){
+	font-family:myriad proi;
+	color:#270c14;
+	font-size: 22px;
+}
+
+.row-text3 p:nth-child(1){
+	font-family: myriad pro;
+	font-weight:bold;
+	color:#2f0914;
+	font-size:30px;
+	line-height:10px;
+	text-decoration: underline;
+	margin-top: 210px;
+}
+
+.row-text3 p{
+	font-family:myriad proi;
+	color:#270c14;
+	font-size: 22px;
+}
+
+.row-text{
+	width: 100px;
+	margin:50px 0px;
+}
+
+/*project*/
+
+#project {
+    /* background-image: url("https://flevix.com/wp-content/uploads/2019/12/Motion-Background.svg"); */
+    color:#a742a7;
+	background-color: #ec9dec;
+	/* margin-top: 0px; */
+/*   background-image: url("ker"); */
+}
+
+.card {
+    color:#493333;
+	font-family:myriad proi;
+    font-weight:bold;
+	font-size: 23px;
+	line-height:0px;
+	background-color: #b97ca1;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+	border-radius:20px; /*lengkung kotak*/
+	/* box-shadow:rgba(248, 239, 239, 0.787); */
+}
+.card h6{
+	color: white;
+	font-family:myriad proi;
+}
+
+.card img{
+	border-top-right-radius: 20px; /*lengkung kotak*/
+	border-top-left-radius: 20px; /*lengkung kotak*/
+}
+
+/*akhir project*/
+
+/*contact*/
+#contact {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    background: 	#b877aa;
+}
+
+#contact .col {
+    color: #fdfdfd;
+}
+
+#contact p {
+    color: #f0f0f0;
+}
+
+#contact h2{
+	font-family:myriad proi;
+}
+
+#contact h5 {
+    padding-left: 10px;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+ .social ul {
+    display: flex;
+   justify-content: center;
+}
+
+.social ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social ul li a {
+    display: block;
+	color:#4b113a;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(255, 248, 254);
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
